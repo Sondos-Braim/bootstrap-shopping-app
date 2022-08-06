@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Nanum+Gothic:wght@800&family=Roboto:wght@700&display=swap");
+.upperNavbar {
+  padding: 0 5% !important;
+  background-color: var(--blue) !important;
+}
+.upperNavbar .navbar-nav {
+  color: aqua;
+  gap: 10px;
+}
+
+.navbar-brand {
+  font-size: 2em !important;
+  font-family: "Roboto", sans-serif;
+  color: white !important;
+}
+.lowerNavBar {
+  box-shadow: 0 0 10px 0 rgb(75 84 96 / 22%);
+  padding: 10px 5% !important;
+  background-color: white !important;
+  z-index: 2 !important;
+}

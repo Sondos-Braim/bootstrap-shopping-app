@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
+import BottomHeader from "./components/Header/BottomHeader";
+import Header from "./components/Header/Header";
+import StickyHeader from "./components/Header/StickyHeader";
+import Section from "./components/Section";
+import Subscribe from "./components/Subscribe/Subscribe";
+import categories from "./data/categories.json";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <StickyHeader />
+      <main>
+        <Banner />
+        <Subscribe />
+        {categories &&
+          categories.map((category) => (
+            <Section heading={category.heading} data={category.items} />
+          ))}
+      </main>
+      <Footer />
+      <BottomHeader />
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.dropdown-toggle {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+hr {
+  margin: 0 !important;
+}
+.dropdown-item:hover {
+  color: #01b2ee !important;
+}
+a {
+  text-decoration: none !important;
+}

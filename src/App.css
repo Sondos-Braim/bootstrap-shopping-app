@@ -1,7 +1,12 @@
+:root {
+  --blue: #01b2ee;
+}
 .App {
   text-align: center;
 }
-
+* {
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+main {
+  padding: 10px 5%;
+  background-color: #f4f7fb;
+  overflow-x: hidden;
+}
+.greyText {
+  color: #4f5864;
+  font-weight: 500;
+}
+.blueHover:hover {
+  color: var(--blue);
+}
+.blueText {
+  color: var(--blue) !important;
+}
+.large-text {
+  font-size: x-large !important;
+  font-weight: 500 !important;
+}
+.shadow-button {
+  box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+  border: none;
+  background: #01b2ee;
+  border-radius: 0 5px 5px 0;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 24px;
+  color: white;
+}
+.left-text {
+  text-align: left;
+}
+@media (max-width: 576px) {
+  .customButton {
+    background-color: transparent;
+    color: var(--blue);
+    border: 0;
+    white-space: nowrap;
+  }
+  .itemIcon {
+    color: var(--blue) !important;
+  }
+  .heading {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 577px) {
+  .customButton {
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 15px;
+    border: 0;
+  }
+}
+.border-line {
+  border-bottom: solid 1px rgb(186 158 158 / 13%);
+}
+.elipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.like-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #f4f7fb;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 1;
 }

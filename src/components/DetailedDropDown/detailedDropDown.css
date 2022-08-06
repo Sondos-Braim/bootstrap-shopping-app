@@ -1,0 +1,19 @@
+.large-menu {
+  width: 50vw !important;
+}
+.menuItem {
+  background-color: white !important;
+  display: inline !important;
+}
+.item:hover .itemIcon {
+  transform: translateX(50%) !important;
+}
+.item:hover .menuItem {
+  color: #01b2ee !important;
+}
+.active .itemIcon {
+  transform: translateX(50%) !important;
+}
+.active .menuItem {
+  color: #01b2ee !important;
+}
